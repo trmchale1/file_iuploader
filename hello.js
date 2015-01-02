@@ -1,7 +1,14 @@
-http = require('http');
+var http = require('http');
+var express = require("express");
 
+var app = express();
 
-var app = http.createServer(function (request, response) {
+app.use(function(request, response, next) {
+  console.log("In comes a " + request.method + " to " + request.url);
+  next();
+});
+
+app.use(function (request, response) {
 	if(request.url == "/") {
 		response.writeHead(200, { "Content-Type": "text/plain" });
 		response.end("Welcome to the home page")
@@ -38,7 +45,7 @@ var app = http.createServer(function (request, response) {
 
 });
 
-app.listen(8000);
+http.createServer(app).listen(8000);
 
 console.log('Server running at http://122.0.0.1:8000/');
 

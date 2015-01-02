@@ -1,0 +1,25 @@
+{
+  "name": "practice_site",
+  "version": "0.0.0",
+  "description": "none",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trmchale1/file_iuploader.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "tim mchale",
+  "license": "none",
+  "bugs": {
+    "url": "https://github.com/trmchale1/file_iuploader/issues"
+  },
+  "homepage": "https://github.com/trmchale1/file_iuploader",
+  "dependencies": {
+    "express": "^4.10.6"
+  }
+}
