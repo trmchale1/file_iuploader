@@ -1,12 +1,10 @@
 var http = require('http');
+var morgan = require("morgan");
 var express = require("express");
 
 var app = express();
 
-app.use(function(request, response, next) {
-  console.log("In comes a " + request.method + " to " + request.url);
-  next();
-});
+app.use(morgan()); 
 
 app.use(function (request, response) {
 	if(request.url == "/") {

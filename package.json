@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/trmchale1/file_iuploader",
   "dependencies": {
-    "express": "^4.10.6"
+    "express": "^4.10.6",
+    "morgan": "^1.5.1"
   }
 }
