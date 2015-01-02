@@ -3,8 +3,8 @@ var morgan = require("morgan");
 var express = require("express");
 
 var app = express();
-
 app.use(morgan()); 
+
 
 app.all("*", function(request, response, next){
 	response.writeHead(200, {"Content-Type" : "text/html"});
